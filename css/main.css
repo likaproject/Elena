@@ -1,0 +1,167 @@
+/*Connecting fonts*/
+@font-face {
+	font-family: 'Belinda';
+	src: url('../fonts/Belinda-Font/belinda.otf');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Cabin';
+	src: url('../fonts/Cabin/Cabin-Regular.ttf');
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'PT_SansRegular';
+	src: url('../fonts/PT_Sans/PT_Sans-Web-Regular.ttf');
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'PT_SansBold';
+	src: url('../fonts/PT_Sans/PT_Sans-Web-Bold.ttf');
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'naxa';
+	src: url('../fonts/nexa/Nexa-Regular.otf');
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'nexa';
+	src: url('../fonts/nexa/Nexa-Bold.otf');
+	font-weight: bold;
+}
+@font-face {
+	font-family: 'OpenSansSemibold';
+	src: url('../fonts/Open_Sans/OpenSans_Semibold.ttf');
+	font-weight: bold;
+}
+@font-face {
+	font-family: 'ubuntu';
+	src: url('../fonts/ubuntu.ttf');
+	font-weight: bold;
+}
+html, body, h1, h2, ul, li, p, .wrap {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#logo, .wrap, header, .btn {
+    text-align: center;
+}
+
+.wrap, ul, header, .btn {
+    margin: 0 auto;
+}
+#logo {
+    font-size:  52px;
+    font-family: Belinda;
+    color: #ffffff;
+    font-weight: 200;
+    padding-top: 40px;
+}
+
+.wrap {
+    width: 80%;
+    height: 100%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 52%;
+}
+
+ul li {
+    float: left;
+    list-style: none;
+    color: #ffffff; 
+}
+
+.clear {
+    clear: both;
+}
+
+header h2 {
+    font-size: 53px;
+    font-weight: 600;
+    font-family: 'ubuntu';
+}
+
+header {
+    background: url(../images/banner.png) 100% 100% no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width: 800px;
+    height: 590px;
+    color:  #ffffff;
+}
+header p:before, header p:after  {
+    content: '';
+    display: inline-block;
+    height: 2px;
+    width: 103px;
+    background: #ffffff;
+    opacity: 0.3;
+    vertical-align: middle;
+    box-sizing: border-box; 
+}
+header p:before {
+    margin-right: 35px;
+}
+header p:after {
+    margin-left: 35px;
+}
+header p {
+    text-transform: uppercase;
+    font-family: 'PT_SansBold';
+    font-size: 15px;
+    font-weight: 100;
+    margin-top: 40px;
+}
+
+.blue {
+    background-color: #50c3af;
+}
+
+.gray {
+    background-color: #d2d5da;
+}
+
+.bg_lightgray {
+    background-color: #eeeeef;
+}
+
+.btn {
+    height: 50px;
+    width: 235px;
+    border-radius: 50px; 
+    line-height: 50px;
+    margin-top: 80px;
+}
+
+nav {
+    padding: 30px 0 75px 0;
+    font-family: 'OpenSansSemibold';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
