@@ -40,7 +40,7 @@
 	src: url('../fonts/ubuntu.ttf');
 	font-weight: bold;
 }
-html, body, h1, h2, ul, li, p, .wrap {
+html, body, h1, h2, ul, li, p, .wrap, .main_content {
     margin: 0;
     padding: 0;
 }
@@ -49,11 +49,11 @@ a {
     color: #ffffff;
 }
 
-#logo, .wrap, header, .btn {
+#logo, .wrap_header, header, .btn {
     text-align: center;
 }
 
-.wrap, ul, header, .btn {
+.wrap, .wrap_header, ul, header, .btn, .main_content {
     margin: 0 auto;
 }
 #logo {
@@ -64,9 +64,10 @@ a {
     padding-top: 40px;
 }
 
-.wrap {
+.wrap, .wrap_header {
     width: 80%;
     height: 100%;
+    padding: 0 5px;
 }
 
 ul {
@@ -92,11 +93,14 @@ header h2 {
     font-family: 'ubuntu';
 }
 
+header, .main_content {
+    width: 800px;
+}
+
 header {
     background: url(../images/banner.png) 100% 100% no-repeat;
     background-size: cover;
     background-position: top center;
-    width: 800px;
     height: 590px;
     color:  #ffffff;
 }
@@ -148,6 +152,131 @@ nav {
     padding: 30px 0 75px 0;
     font-family: 'OpenSansSemibold';
 }
+
+.block1 {
+    height: 290px;
+    display: flex;
+    justify-content: center;
+}
+
+.block2 {
+    height: 330px; 
+}
+
+.block3 {
+    height: 530px; 
+}
+.block4 {
+    height: 430px; 
+}
+
+footer {
+    height: 280px;
+}
+
+.blue_foot {
+    height: 230px;
+}
+/*First section of main content*/
+.advantages {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+
+}
+
+.advantages_col {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    width: 190px;
+    color: #8b8d91;
+    align-self: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.advantages_col img {
+    width: 40px;
+    align-self: center;
+}
+
+.line_under {
+    font-family: 'PT_SansBold';
+    font-size: 18px;
+    color: #8b8d91;
+}
+
+.line_under:after {
+    content: "";
+    display: inline-block;
+    width: 135px;
+    height: 2px;
+    background-color: #8b8d91;
+    opacity: 0.1;
+    width: 100%;
+}
+
+.advantages_col img:first-child {
+    width: 43px;
+    align-self: center;
+}
+
+.advantages_col p:first-of-type {
+    font-family: 'PT_SansBold';
+    font-size: 16px;
+    font-weight: bold; 
+    color: #40474e;
+}
+
+.advantages_col p:last-child {
+    font-family: 'PT_SansRegular';
+    font-size: 15px;
+    line-height: 24px;
+}
+/*Second section of main content*/
+.article_cover {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.article_preview_1, .article_preview_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.article_preview_1 {
+    padding: 65px 25px 75px 0;    
+}
+
+.article_preview_2 {
+    padding: 65px 0 75px 25px;    
+}
+
+.reader {
+    font-family: 'PT_SansRegular';
+    font-size: 14px;
+    color: #8b8d91;
+    line-height: 25px;
+}
+.read_more {
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    border: 0;
+    color: #ffffff;
+   
+}
+
+
+
+
+
+
+
 
 
 
