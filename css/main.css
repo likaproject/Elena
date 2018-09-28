@@ -93,7 +93,11 @@ a {
     vertical-align: middle;
 }
 
-nav {
+#min_menu {
+    display: none;
+}
+
+nav  {
     padding: 30px 0 75px 0;
     font-family: 'OpenSansSemibold';
 }
@@ -130,6 +134,11 @@ ul li {
     float: left;
     list-style: none;
     color: #ffffff; 
+    width: 100%;
+}
+
+.submenu {
+   width: 100%;
 }
 
 .clear {
@@ -174,6 +183,14 @@ header p {
     margin-top: 40px;
 }
 
+header div.blue.btn:hover {
+    animation-name: btn_hover;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(1,1,8,8);
+    
+} 
+/*end Header*/
 .block1 {
     height: 290px;
     display: flex;
@@ -192,7 +209,6 @@ header p {
     height: 430px; 
 }
 
-/*end Header*/
 /*First section of main content*/
 .advantages {
     display: flex;
@@ -514,10 +530,47 @@ footer {
     .wrap_header, .main_content {
         width: 100%;
     }
+    #logo {
+        text-align: left;
+        margin-left: 50px;
+        float: left;
+    }
+    header h2 {
+        font-size: 38px;
+        margin-top: 80px;
+    }
+    header h2 + p{
+        display: none;  
+    }
+    /*menu for mobile*/  
+    .submenu {
+        display: block;
+        height: 100px;
+    }
+    
+     nav > ul {
+        padding: 0;
+        margin: 0;
+        width: 50%;
+         float: right;
+    }
+    .submenu {
+        height: 100px;
+        width: 50%;
+    }
+    .submenu > li {
+        width: 100%;
+        padding: 0;
+        line-height: 25px;
+        text-align: right;
+        font-size: 0.8em;
+    }
+     /*end menu for mobile*/
     .advantages {
         flex-direction: column;
         justify-content: space-around;
         height: 100%;
+        margin-top: -50px;
     }
     .block1, .article_cover {
         padding: 30px 0;
