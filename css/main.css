@@ -542,6 +542,9 @@ footer {
     header h2 + p{
         display: none;  
     }
+    header h2 + p:before, header h2 + p:after {
+        display: none;  
+    }
     /*menu for mobile*/  
     .submenu {
         display: block;
