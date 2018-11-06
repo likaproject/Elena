@@ -514,6 +514,9 @@ footer {
     .wrap_header, .main_content {
         width: 100%;
     }
+    header h2 + p:before, header h2 + p:after {
+        display: none;  
+    }
     .advantages {
         flex-direction: column;
         justify-content: space-around;
