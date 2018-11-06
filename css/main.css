@@ -514,10 +514,10 @@ footer {
     .wrap_header, .main_content {
         width: 100%;
     }
-    header h2 + p:after {
+    nav h2 + p:after {
         display: none;  
     }
-    header h2 + p:before{
+    nav h2 + p:before{
         display: none;  
     } 
     .advantages {
