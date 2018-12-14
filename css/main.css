@@ -542,8 +542,9 @@ footer {
     header h2 + p{
         display: none;  
     }
-    header h2 + p:before, header h2 + p:after {
-        display: none;  
+    header h2 + p::before, header h2 + p::after {
+        display: none; 
+	visibility: hidden;
     }
     /*menu for mobile*/  
     .submenu {
@@ -578,7 +579,7 @@ footer {
     .block1, .article_cover {
         padding: 30px 0;
     }
-    .article_preview_1, .article_preview_2, .article_preview_3, .article_preview_4 , article_preview_5{
+    .article_preview_1, .article_preview_2, .article_preview_3, .article_preview_4 , .article_preview_5{
         padding: 25px 20px;  
         flex-direction: column;
     }
@@ -586,7 +587,7 @@ footer {
         flex-direction: column;
         align-content: center;
     }   
-    .article_img, .line_under, .reader, article_preview_5 {
+    .article_img, .line_under, .reader, .article_preview_5 {
         align-self: center; 
         padding: 20px 0;
         text-align: center;
